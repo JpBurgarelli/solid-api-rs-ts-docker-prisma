@@ -4,7 +4,7 @@ import { compare } from "bcryptjs";
 import { inMemoryUsersRepository } from "@/repositories/in-memory/in-memory-users-repository";
 import { UserEmailAlreadyExistsError } from "./errors/user-email-already-exists-error";
 
-describe("Register use caso", () => {
+describe("Register use case", () => {
   it("Allows to register user", async () => {
     const usersRepository = new inMemoryUsersRepository();
     const registerUseCase = new RegisterUseCase(usersRepository);
